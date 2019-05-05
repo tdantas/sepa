@@ -1,0 +1,6 @@
+{ :main hello-world.core
+  :optimizations :none
+  :install-deps true
+  :output-to  "resources/public/js/sepa.js"
+  :output-dir "target/public/js"
+  :npm-deps {:sepa "1.0.3"}}

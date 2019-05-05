@@ -1,0 +1,14 @@
+{:deps {org.clojure/clojurescript                  {:mvn/version "1.10.516"}
+        reagent                                    {:mvn/version "0.8.1"}
+        com.stuartsierra/component                 {:mvn/version "0.4.0"}
+        org.clojure/tools.namespace                {:mvn/version "0.2.11"}
+        org.clojars.frozenlock/reagent-keybindings {:mvn/version "1.0.0"}
+        com.bhauman/figwheel-main                  {:mvn/version "0.2.0"}
+        org.clojure/data.csv                       {:mvn/version "0.1.4"}
+        cljs-drag-n-drop                           {:mvn/version"0.1.0"}}
+
+ ;;clj -Spath |  sed -e 's/:/\'$'\n/g' | head  
+ :paths ["src" "resources" "target"]    
+ :aliases {:repl  {:extra-paths ["dev"]}
+           :fig {:main-opts ["-m" "figwheel.main"]}
+           :fig-watch {:main-opts ["-m" "figwheel.main" "-b" "dev" "-r"]}}}

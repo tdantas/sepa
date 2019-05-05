@@ -1,0 +1,8 @@
+ ; compiler options
+ ;; clj --main cljs.main -co dev.edn --watch "src" --compile  --repl
+{
+  :main hello-world.core
+  :optimizations :none
+  :output-dir "public/cljs-out"
+  :output-to "public/cljs-out/dev-main.js"}
+
